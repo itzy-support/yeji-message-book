@@ -16,13 +16,23 @@
         ></VTextField>
       </VResponsive>
 
-      <VBtn icon>
-        <VIcon>mdi-dots-vertical</VIcon>
+      <VBtn
+        icon
+        color="red-darken-1"
+        href="https://drive.google.com/file/d/1CxS018u2PJoY-uZcptItN63iNDsQJlbD/view?usp=drive_link"
+        target="_blank"
+      >
+        <VIcon icon="mdi-file-pdf-box"></VIcon>
       </VBtn>
     </VAppBar>
 
     <VNavigationDrawer v-model="drawer">
-      <VList :items="index" item-value="page" @click:select="setPage($event)" />
+      <VList
+        :items="index"
+        item-value="page"
+        @click:select="setPage($event)"
+        color="primary"
+      />
     </VNavigationDrawer>
 
     <VMain>
@@ -103,3 +113,9 @@ const index = [
   },
 ];
 </script>
+
+<style>
+html * {
+  font-family: "Pretendard", sans-serif;
+}
+</style>
