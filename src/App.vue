@@ -48,7 +48,7 @@
           max-height="93vh"
           :src="`./book/YEJI_MESSAGE_BOOK_${(index + 1)
             .toString()
-            .padStart(3, 0)}.jpg`"
+            .padStart(3, 0)}.webp`"
         />
       </VCarousel>
     </VMain>
